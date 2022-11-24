@@ -1,0 +1,17 @@
+#root {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap !important; */
+    margin: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+}
+
+.main_div {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+}
