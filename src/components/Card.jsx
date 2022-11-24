@@ -1,13 +1,13 @@
 import React from 'react';
 import { initialState } from "../initialState";
 import styles from "./Card.module.css"
-const Card = () => {
+const Card = (props) => {
 
     return (
-        <>
-            {initialState.map((el) => {
+        <div className={styles.container}>
+            {props.data.map((el) => {
                 return (
-                    <div className="card" key={el.id} styles={{ width: '200px' }}>
+                    <div className="card" key={el.id} style={{ width: '18rem' }}>
                         <img src={el.img} className="card-img-top" alt={el.name} />
                         <div className="card-body">
                             <h5 className="card-title">{el.name}</h5>
@@ -17,7 +17,7 @@ const Card = () => {
                     </div>
                 )
             })}
-        </>
+        </div>
     );
 };
 
